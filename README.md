@@ -8,7 +8,7 @@ All source docs are maintained in `source`. [Gitlocalize](https://gitlocalize.co
 
 It is important that the target dir structure is a mirror of the source dir structure, and the Gitlocalize translations are configured accordingly.
 
-This allows builds of respective language repo sites to maintain the same path structure, only having to change the target language dir.
+This allows builds of respective language repo sites to maintain the same path structure, only having to change the target language dir on build.
 
 ### Adding a target language
 
