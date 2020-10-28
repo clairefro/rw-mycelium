@@ -4,7 +4,7 @@ A docs middleman for managing internationalization. This is a sandbox repo.
 
 ## Usage
 
-All source docs are maintained in source. Gitlocalize is used to sync source with respective target languages in `i18n` directory.
+All source docs are maintained in `source`. [Gitlocalize](https://gitlocalize.com/) is used to sync source docs with respective target languages in `i18n` directory.
 
 It is important that the target dir structure is a mirror of the source dir structure, and the Gitlocalize translations are configured accordingly.
 
