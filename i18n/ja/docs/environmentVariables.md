@@ -16,7 +16,7 @@
 
 Web側では、webpackをターゲットとして、次の3つのいずれかを実行できます。
 
-1. Prefix your env vars with `REDWOOD_ENV_` —they will be available via `process.env.REDWOOD_ENV_MY_VAR_NAME` and will be dynamically replaced during the build phase. This means that `process.env.REDWOOD_ENV_SECRET_API_KEY` will be removed and replaced with the *actual* value of your API key, so that if someone inspected the source of your page they could see it in plain text. This is a limitation of delivering static Javascript and HTML files to the browser.
+1. 環境変数の前に` REDWOOD_ENV_ `を付けます—これらは<code data-md-type="codespan"> process.env.REDWOOD_ENV_MY_VAR_NAME を介して利用可能であり、ビルドフェーズ中に動的に置き換えられます。 これは、<code>process.env.REDWOOD_ENV_SECRET_API_KEY</code> が削除され、APIキーの<em data-md-type="emphasis"> actual 値に置き換えられるため、誰かがページのソースを調べた場合にそれを確認できることを意味します。 プレーンテキストで。 これは、静的JavascriptおよびHTMLファイルをブラウザに配信する際の制限です。</em></code></code>
 
 2. `redwood.toml`それらをホワイトリストに登録します。例えば：
 
