@@ -13,5 +13,10 @@ It is important that the target dir structure is a mirror of the source dir stru
 To create a new target language directory, run this from the root, where `LANG_CODE` is a the [ISO 639-1 code](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) of the target language.
 
 ```
+# copy directory skeleton from source to i18n/<LANBG_CODE>/
 rsync -av -f"+ */" -f"- *" "./source/" "./i18n/<LANG_CODE>/
+
+# add .gitkeepers to empty dirs
+find . -type d ! -path "*.git*" -empty -exec touch '{}'/.gitkeep \;
+
 ```
