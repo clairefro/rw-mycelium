@@ -10,6 +10,12 @@ It is important that the target dir structure be a mirror of the source dir stru
 
 This allows builds of respective language repo sites to maintain the same path structure, so you only have to change the target language dir on build.
 
+### Adding translations
+
+Do so from the [Gitlocalize repo](https://gitlocalize.com/repo/5471)
+
+Gitlocalize manages doc syncing when source content is added or changed.
+
 ### Adding a target language
 
 To create a new target language directory, run this from the root, where `LANG_CODE` is a the [ISO 639-1 code](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) of the target language.
